@@ -10,9 +10,7 @@ const Home = () => {
           <p>
             TasteIt is recipe app which is made in REACT22K group React lessons
           </p>
-          <button>
-            <Link to="recipes">Recipes</Link>
-          </button>
+          <Link to="recipes">Recipes</Link>
         </div>
       </div>
       <h2>Looking for recipes?</h2>

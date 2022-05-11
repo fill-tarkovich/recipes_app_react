@@ -1,0 +1,22 @@
+header {
+  width: 100%;
+  background-color: rgb(67, 66, 66);
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin-left: 2em;
+  }
+
+  a {
+    color: white;
+  }
+}

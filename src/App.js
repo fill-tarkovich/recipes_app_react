@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Recipes from "./components/Recipes";
 import Form from "./components/Form";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./sass/app.scss";
 
 function App() {
   return (
