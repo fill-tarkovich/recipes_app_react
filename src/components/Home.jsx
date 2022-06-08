@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import video from "../assets/production.webm";
+import "./../sass/home.scss";
 
 const Home = () => {
   return (
     <>
       <div>
+        <video autoPlay loop="true" muted="true" className="myVideo">
+          <source src={video} type="video/webm" />
+        </video>
         <div>
           <h1>TasteIT</h1>
           <p>

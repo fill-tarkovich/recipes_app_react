@@ -1,7 +1,7 @@
 import React from "react";
 
-function Recipes() {
+const Recipes = () => {
   return <div>Recipes page will be here</div>;
-}
+};
 
 export default Recipes;

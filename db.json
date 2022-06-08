@@ -1,0 +1,91 @@
+{
+  "recipies": [
+    {
+      "name": "Pannkoogid",
+      "author": "Margit",
+      "desc": "This is our family classic for Sunday mornings. Sunday without pancakes is just a day. Here is my base recipe, nowadays I add and modify it with ingredients I find at home",
+      "inc": [
+        {
+          "id": 1,
+          "incName": "milk",
+          "quantity": "2dl"
+        },
+        {
+          "id": 2,
+          "incName": "flour",
+          "quantity": "2dl"
+        },
+        {
+          "id": 3,
+          "incName": "egg",
+          "quantity": "2"
+        }
+      ],
+      "inst": "In a medium bowl, whisk together milk and egg. Add dry ingredients to milk mixture; whisk until all is neat. ",
+      "img": "https://source.unsplash.com/ZgRTuPsmFQg/1600x900",
+      "id": 1,
+      "country_code": "EE"
+    },
+    {
+      "name": "Estonian Potato Salad ",
+      "author": "Margit",
+      "desc": "This salad is loved by Estonians from all walks of life. It’s a true Estonian staple, and one of the country’s most popular foods.",
+      "country_code": "EE",
+      "inc": [
+        {
+          "id": 1,
+          "incName": "unpeeled potatoes",
+          "quantity": "10-15"
+        },
+        {
+          "id": 2,
+          "incName": "boiled eggs",
+          "quantity": "5-6"
+        },
+        {
+          "id": 3,
+          "incName": "fresh cucumbers ",
+          "quantity": "1-2"
+        },
+        {
+          "id": 4,
+          "incName": "pickled cucumbers",
+          "quantity": "4-5 "
+        },
+        {
+          "id": 5,
+          "incName": "medium onions",
+          "quantity": "2-3"
+        },
+        {
+          "id": 6,
+          "incName": "ham or sausage",
+          "quantity": "400-500 g"
+        },
+        {
+          "id": 7,
+          "incName": "sour cream",
+          "quantity": "500ml"
+        },
+        {
+          "id": 8,
+          "incName": "mayonnaise",
+          "quantity": "500ml "
+        },
+        {
+          "id": 9,
+          "incName": "salt and black pepper",
+          "quantity": " a fingertip"
+        },
+        {
+          "id": 10,
+          "incName": "mustard",
+          "quantity": "2 tspoon"
+        }
+      ],
+      "inst": "Boil the potatoes in salted water the day before. Let it cool completely - potatoes cooked in a hurry on the same day do not become a real salad!\n\nTo make a salad, peel boiled potatoes and chop into small cubes. Cut the boiled cooled eggs into small cubes or crush them with a fork. Chop the cucumber into small cubes. Chop the onion or leek very finely (if desired, soak the chopped onion in a little cold water, it will soften the taste). Chop the sausage into small cubes.\n\nThe sauce should be mixed in a separate bowl. Mix sour cream, mayonnaise and mustard. Add chopped dill, onion tops, salt and pepper (the more summertime, the more I add herbs). Pour the sauce over the salad ingredients and mix gently.\n\nBefore serving, let the salad season in the pantry for about 2-4 hours.",
+      "img": "https://nami-nami.ee/files/recipes/5240/martiinakartulisalat.JPG",
+      "id": 2
+    }
+  ]
+}
