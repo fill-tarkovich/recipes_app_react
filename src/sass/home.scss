@@ -1,6 +1,85 @@
 .myVideo {
-  width: 100vw;
-  height: 60vh;
+  height: 50vh;
+  min-height: 450px;
   object-fit: cover;
-  top: 0;
+}
+
+.home_container {
+  position: relative;
+}
+
+.video_block {
+  position: absolute;
+  width: 50%;
+  top: 30%;
+  left: 5%;
+
+  h1 {
+    color: #fafafa;
+    font-size: 4em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+    margin-bottom: 75px;
+  }
+
+  p {
+    color: #fafafa;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+    margin-bottom: 50px;
+  }
+
+  .link {
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    color: #fafafa;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      border: 1.5px solid white;
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.cards {
+  width: 90%;
+  margin: 0 auto 70px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 30%;
+  border: 1.5px solid #434242;
+  border-radius: 8px;
+  padding: 1% 2%;
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    margin-bottom: 1.3rem;
+  }
+
+  a {
+    color: #706767cc;
+
+    &:hover {
+      color: #7067679a;
+      transform: scale(1.05);
+    }
+  }
 }

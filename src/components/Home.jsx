@@ -6,21 +6,23 @@ import "./../sass/home.scss";
 const Home = () => {
   return (
     <>
-      <div>
-        <video autoPlay loop="true" muted="true" className="myVideo">
+      <div className="home_container">
+        <video autoPlay loop muted width="100%" className="myVideo">
           <source src={video} type="video/webm" />
         </video>
-        <div>
+        <div className="video_block">
           <h1>TasteIT</h1>
           <p>
             TasteIt is recipe app which is made in REACT22K group React lessons
           </p>
-          <Link to="recipes">Recipes</Link>
+          <Link to="recipes" className="link">
+            Browse Recipes
+          </Link>
         </div>
       </div>
       <h2>Looking for recipes?</h2>
-      <div>
-        <div>
+      <div className="cards">
+        <div className="card">
           <h3>Browse recipes</h3>
           <p>
             Find your favourites in this collection. You can search recipes
@@ -28,12 +30,12 @@ const Home = () => {
           </p>
           <Link to="recipes"> All Recipes</Link>
         </div>
-        <div>
+        <div className="card">
           <h3>Add recipes</h3>
           <p>Recipe from your country is missing? No worries, add one!</p>
           <Link to="form">Add new</Link>
         </div>
-        <div>
+        <div className="card">
           <h3>Want to know more about our projects?</h3>
           <p>Visit our programme homepage</p>
           <a href="http://bc.fi" target="_blank" rel="noreferrer">

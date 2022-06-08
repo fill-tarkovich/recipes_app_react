@@ -1,11 +1,20 @@
 header {
   width: 100%;
-  background-color: rgb(67, 66, 66);
+  background-color: #434242;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5%;
+    align-self: center;
+    padding: 15px 5%;
+
+    div {
+      font-size: 1.6rem;
+    }
   }
 
   ul {
