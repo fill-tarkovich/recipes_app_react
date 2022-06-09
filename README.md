@@ -13,3 +13,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run server`
+
+Start JSON Server on 3001 port. You can change port in package.json:
