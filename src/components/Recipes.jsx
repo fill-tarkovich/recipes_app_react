@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import RecipeCard from "./RecipeCard";
+import "./../sass/recipes.scss";
 
 const Recipes = () => {
   const [flags, setFlags] = useState([]);
@@ -29,14 +30,16 @@ const Recipes = () => {
 
   return (
     <div>
-      {recipies.map((recipe) => (
-        <RecipeCard
-          key={recipe.id}
-          data={recipe}
-          flag={flags.find((flag) => flag.cca2 === recipe.country_code).flag}
-          {...recipe}
-        />
-      ))}
+      <div className="recipes">
+        {recipies.map((recipe) => (
+          <RecipeCard
+            key={recipe.id}
+            data={recipe}
+            flag={flags.find((flag) => flag.cca2 === recipe.country_code).flag}
+            {...recipe}
+          />
+        ))}
+      </div>
     </div>
   );
 };

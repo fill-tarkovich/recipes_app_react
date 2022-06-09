@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./../sass/card.scss";
 
 const RecipeCard = ({ title, description, img, flag }) => {
   return (
-    <div>
-      <h2>{title}</h2>
-      <p>{description}</p>
+    <div className="recipe_card">
       <img src={img} alt={title} />
-      <div>{flag}</div>
+      <div className="flag">{flag}</div>
+      <h2>"{title}"</h2>
+      <p>{description}</p>
       <div>
-        <Link to={title}>See more</Link>
+        <Link to={title}>See recipe</Link>
       </div>
     </div>
   );

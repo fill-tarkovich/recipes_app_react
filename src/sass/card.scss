@@ -1,0 +1,54 @@
+.recipe_card {
+  position: relative;
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 3%;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.8);
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    margin-top: 9%;
+    margin-bottom: 6%;
+    font-size: 1.65rem;
+  }
+
+  p {
+    width: 90%;
+    text-align: justify;
+    font-style: italic;
+    margin: auto;
+    margin-bottom: 3%;
+  }
+
+  a {
+    margin-left: 5%;
+    color: #706767cc;
+    font-size: 18px;
+    font-weight: 500;
+
+    &:hover {
+      color: #7067679a;
+      text-decoration: underline;
+    }
+  }
+
+  .flag {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    background-color: #fafafa;
+    border-radius: 70px;
+    font-size: 2.3em;
+    text-align: center;
+    padding: 5px;
+  }
+}
