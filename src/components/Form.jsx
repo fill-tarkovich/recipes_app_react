@@ -31,7 +31,7 @@ const Form = () => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
-  const changeIncData = (e, i) => {
+  const changeIngredients = (e, i) => {
     const { name, value } = e.target;
     const incList = [...ingredients];
     incList[i][name] = value;
@@ -56,21 +56,42 @@ const Form = () => {
     setIngredients([...ingredients, newIngredient]);
   };
 
+  const removeMore = (e, i) => {
+    e.preventDefault();
+    const remvIngredient = [...ingredients];
+    if (remvIngredient.length >= 2) {
+      remvIngredient.splice(i, 1);
+      setIngredients(remvIngredient);
+    }
+  };
+
   const submitData = (e) => {
     axios.post("http://localhost:3001/recipies", data);
   };
 
   return (
-    <div>
+    <div className="form">
       <h1>Add new recipe:</h1>
       <form onSubmit={submitData}>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" name="title" id="title" onChange={changeData} />
+          <input
+            type="text"
+            name="title"
+            id="title"
+            required
+            onChange={changeData}
+          />
         </div>
         <div>
           <label htmlFor="author">Author</label>
-          <input type="text" name="author" id="author" onChange={changeData} />
+          <input
+            type="text"
+            name="author"
+            id="author"
+            required
+            onChange={changeData}
+          />
         </div>
         <div>
           <label htmlFor="desc">Description</label>
@@ -78,17 +99,24 @@ const Form = () => {
             type="text"
             name="description"
             id="description"
+            required
             onChange={changeData}
           />
         </div>
         <div>
           <label htmlFor="countryCode">Recipe is from:</label>
-          <select name="country_code" id="countryCode" onChange={changeCountry}>
-            <option value="" disabled selected>
+          <select
+            className="select"
+            name="country_code"
+            id="countryCode"
+            required
+            onChange={changeCountry}
+          >
+            <option value="choose" invalid="true">
               Choose country
             </option>
             {countries.sort().map((c) => (
-              <option key={c.name}>{c.name.common}</option>
+              <option key={c.name.common}>{c.name.common}</option>
             ))}
           </select>
         </div>
@@ -96,7 +124,7 @@ const Form = () => {
           <label htmlFor="img">Image url</label>
           <input type="url" name="img" id="img" onChange={changeData} />
         </div>
-        <p>Ingredients</p>
+        <p>Ingredients:</p>
         {ingredients.map((_, i) => {
           return (
             <div key={i}>
@@ -106,28 +134,34 @@ const Form = () => {
                   type="text"
                   name="quantity"
                   id="quantity"
-                  onChange={(e) => changeIncData(e, i)}
+                  required
+                  onChange={(e) => changeIngredients(e, i)}
                 />
               </div>
               <div>
-                <label htmlFor="incName">Ingredient</label>
+                <label htmlFor="name">Ingredient</label>
                 <input
                   type="text"
                   name="name"
                   id="name"
-                  onChange={(e) => changeIncData(e, i)}
+                  required
+                  onChange={(e) => changeIngredients(e, i)}
                 />
               </div>
             </div>
           );
         })}
-        <button onClick={addMore}>Add more ingredients</button>
+        <button onClick={addMore}>+</button>
+        <button onClick={removeMore} className="remove_btn">
+          -
+        </button>
         <div>
           <label htmlFor="inst">Instructions</label>
           <textarea
             type="text"
             name="preparation"
             id="preparation"
+            required
             onChange={changeData}
           />
         </div>
