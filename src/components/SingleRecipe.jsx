@@ -1,7 +1,7 @@
 import React from "react";
 
 const SingleRecipe = () => {
-  return <div>SingleRecipe</div>;
+  return <div>Recipe will be here</div>;
 };
 
 export default SingleRecipe;

@@ -3,6 +3,7 @@ import Layout from "./pages/Layout";
 import Home from "./components/Home";
 import Recipes from "./components/Recipes";
 import Form from "./components/Form";
+import SingleRecipe from "./components/SingleRecipe";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./sass/app.scss";
 
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="recipes" element={<Recipes />} />
             <Route path="form" element={<Form />} />
+            <Route path="recipes/:single" element={<SingleRecipe />} />
           </Route>
         </Routes>
       </BrowserRouter>

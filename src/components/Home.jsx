@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div className="home_container">
-        <video autoPlay loop muted width="100%" className="myVideo">
+        <video autoPlay loop muted={true} width="100%" className="myVideo">
           <source src={video} type="video/webm" />
         </video>
         <div className="video_block">
